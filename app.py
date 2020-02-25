@@ -38,7 +38,7 @@ sym_given_not_dis_prob = {
 def display_homepage():
     return render_template('index.html')
 
-@app.route('/diagnose', methods = ['POST'])
+@app.route('/diagnose', methods = ['GET', 'POST'])
 def diagnose_symptoms():
     data = request.get_json()
 
